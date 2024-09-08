@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio</title>
+</head>
+<body>
+    <ul id="listaNombres">
+
+    </ul>
+    <script>
+        var nombre =["Chispitas", "Pol", "Alex", "Ireness"];
+        var listaNombres = document.getElementById("listaNombres");
+        for (var i=0; i < nombre.length; i++){
+            var listItem = document.createElement("li");
+            listItem.textContent = nombre[i];
+            listaNombres.appendChild(listItem);
+        }
+    </script>
+</body>
+</html>

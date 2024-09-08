@@ -1,0 +1,97 @@
+div{
+    position: absolute;
+    border: 2px black solid;
+}
+#Bloque1{
+    background-color: brown;
+    width: 353px;
+    height: 113px;
+    top: 150px;
+    left: 56px;
+    z-index: 800;
+}
+#Bloque2{
+    background-color: rgb(6, 230, 255);
+    width: 130px;
+    height: 87px;
+    top: 40px;
+    left: 81px;
+    z-index: 0;
+}
+#Hxzijo1Bloque2{
+    background-color: rgb(255, 6, 184);
+    width: 130px;
+    height: 87px;
+    top: 40px;
+    left: 81px;
+    z-index: 2000;
+}
+#Hijo2Bloque2{
+    background-color: rgb(173, 227, 233);
+    width: 130px;
+    height: 87px;
+    top: 40px;
+    z-index: 2000;
+}
+#Hijo23Bloque2{
+    background-color: rgb(255, 201, 6);
+    width: 130px;
+    height: 87px;
+    top: 40px;
+    left: 81px;
+    z-index: 2000;
+}
+#Bloque3{
+    background-color: rgb(47, 254, 0);
+    width: 250px;
+    height: 200px;
+    top: 120px;
+    left: 50px;
+    z-index: 1500;
+}
+#Bloque4{
+    background-color: rgb(255, 0, 0);
+    width: 350px;
+    height: 120px;
+    top: 160px;
+    left: 290px;
+    z-index: 1500;
+}
+#Hijo1delbloque4{
+    background-color: rgb(243, 247, 6);
+    width: 150px;
+    height: 60px;
+    left:80px;
+    top: 40px;
+    z-index: 20;
+}
+#Hijo2delbloque4{
+    background-color: rgb(199, 13, 156);
+    width: 350px;
+    height: 20px;
+    top: 20px;
+    z-index: 30;        
+}
+#Bloque5{
+    background-color: rgb(219, 73, 185);
+    width: 300px;
+    height: 90px;
+    top: 500px;
+    left: 10px;
+    z-index: 20;    
+}
+#Bloque6{
+    background-color: rgb(121, 199, 13);
+    width: 500px;
+    height: 100px;
+    top: 450px;
+    left: 500px;
+    z-index: 300;   
+}
+#Hijo1delbloque6{
+    background-color: rgb(121, 199, 13);
+    width: 366px;
+    height: 50px;
+    left: 56px;
+    z-index: 30;
+}

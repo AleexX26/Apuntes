@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <title>Fondo de un div</title>
+    <style>
+        html,
+        body {
+            margin: 50px;
+            /*height: 100%; esto es el tamaño del body*/
+            height: 100%;
+            /*background-color: #456789; esto es el color de fondo*/
+            background-color: #456789;
+        }
+        #imagen :hover {
+            transform: scale(1.5);
+            transition: transform .2s;
+        }
+        #imagen {
+            width: 400px;
+            height: 550px;
+            margin: 0 auto;
+            background-size: cover;
+            /*La propiedad margin establece los márgenes de un elemento especificando entre uno y cuatro valores, donde cada valor es una longitud, un porcentaje o aut*/
+            /*background:, esto es el fondo y e¡n este caso llamamos a las imagenes por URL*/
+            /*left top: Estos valores se refieren a la posición inicial de la imagen de fondo*/
+            background: url('')left top repeat-x,
+                /*repeat-x: Esta parte de la línea se utiliza para especificar cómo se repetirá la imagen de fondo. "repeat-x"*/
+                /*significa que la imagen se repetirá solo horizontalmente a lo largo del elemento, es decir, se repetirá de */
+                /*izquierda a derecha, pero no verticalmente de arriba a abajo.*/
+                url('/Html/IMG/2541710-removebg-preview.png') left bottom repeat-x,
+                /*left bottom: Esto establece la posición de la imagen de fondo en la esquina inferior izquierda del elemento HTML.*/
+                /*repeat-x: Esto indica que la imagen de fondo se repetirá solo horizontalmente a lo largo del elemento.*/
+                url('/Html/IMG/profe1.jpg') center bottom no-repeat;
+            /*center bottom: Esto establece la posición de la imagen de fondo en el centro horizontal y en la parte inferior del elemento HTML. no-repeat: Esto indica que la imagen de fondo no se repetirá y se mostrará una sola vez en su posición especificada.*/
+            /*border: 50px solid white; esto me cambia el circulo blanco, a más pixel mayor ancho*/
+            border: 25px solid white;
+            /* border-radius: 50% 50%;, eso nos genera que el div se cambie a un circulo*/
+            border-radius: 50% 50%;
+            box-shadow: 0 0 15px 15px #ff0000;
+            /*box-shadow permite proyectar una sombra difuminada desde el marco de casi cualquier elemento*/
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <div id="imagen">
+        </div>
+    </div>
+</body>
+</html>

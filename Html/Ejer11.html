@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movimiento con z-index</title>
+    <style type="text/css">
+        body {
+            margin: 0;
+            overflow: hidden;
+        }
+
+        #movableElement {
+            width: 100px;
+            height: 100px;
+            background-color: #3498db;
+            position: absolute;
+            cursor: pointer;
+            animation: moveAnimation 1s ease-in-out;
+        }
+
+        @keyframes moveAnimation {
+            0% {
+                transform: translate(0, 0);
+                z-index: 1;
+            }
+
+            50% {
+                transform: translate(50vw, 50vh);
+                z-index: 2;
+            }
+
+            100% {
+                transform: translate(0, 0);
+                z-index: 1;
+            }
+        }
+    </style>
+</head> 
+
+<body>
+    <div id="movableElement">Haz clic para mover</div>
+</body>
+
+</html>
