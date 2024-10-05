@@ -1,0 +1,104 @@
+body{
+    margin: 0;
+    background: url(https://live.staticflickr.com/4844/44409635660_c2a8b4b6b5_h.jpg) no-repeat center;
+    background-size: cover;
+    font-family: 'Carter One', Arial, Helvetica, sans-serif;
+    min-height: 100vh;
+}
+header{
+    background: black;
+    padding: 10px;
+    text-align: center;
+    margin-bottom: 20px;
+}
+h1 {
+    margin: 0;
+    color: rgb(255, 0, 0);
+    animation: parpadeo 2s infinite;
+}
+@keyframes parpadeo {
+    0% { color: red; }
+    50% { color: yellow; }
+    100% { color: rgb(10, 121, 34); }
+}
+
+main{
+    position: absolute;
+    top: 30%;
+    left: 10%;
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.514);
+    display: flex;
+    gap: 30px;
+    border-radius: 15px;
+}
+#imagen{
+    width: 200px;
+}
+#palabra_a_adivinar{
+    height: 3em;
+}
+#palabra_a_adivinar span{
+    vertical-align: bottom;
+    font-size: 2em;
+    border-bottom: 2px solid black;
+    width: 30px;
+    text-align: center;
+    margin-right: 6px;
+    display: inline-block;
+}
+#jugar{
+    background-color: black;
+    color: aliceblue;
+}
+#ayuda{
+    background-color: black;
+    color: aliceblue;
+}
+#letras{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 9px;
+}
+#letras button{
+    width: 28px;
+    padding: 6px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.l1{
+    border-color: black;
+    border-radius: 15px;;
+    color: aqua;
+}
+.l2{
+    border-color: black;
+    border-radius: 15px;;
+    color: green;
+}
+.l3{
+    border-color: black;
+    border-radius: 15px;;
+    color: red;
+}
+/* Clase para cambiar el color del botón a rojo */
+.error {
+    background-color: red;
+    color: white;
+}
+
+/* Clase para aplicar una animación de vibración al botón */
+@keyframes shake {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-5px); }
+    50% { transform: translateX(5px); }
+    75% { transform: translateX(-5px); }
+    100% { transform: translateX(0); }
+}
+
+.vibrate {
+    animation: shake 0.4s ease-in-out;
+}

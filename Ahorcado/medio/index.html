@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado</title>
+    <link rel="stylesheet" href="estilos.css">
+    <script src="funciones.js"></script>
+</head>
+<body>
+    <header>
+        <h1>AHORCADO NAVIDEÑO!</h1>
+    </header>
+    <main>
+        <img id="imagen" src="img/img0.png" alt="Ahorcado" />
+        <div>
+            <p id="palabra_a_adivinar">
+            </p>
+            <button id="jugar">Obtener palabra</button>
+            <button id="ayuda">Ayuda</button>
+            <a  href="/Ahorcado/main/main.html"> <button id="jugar"> Salir </button> </a>
+
+            <p id="ayuda-texto"></p>
+
+            <p id="resultado"></p>
+
+            <div id="letras">
+                <button class="l1">a</button>
+                <button class="l2">b</button>
+                <button class="l3">c</button>
+                <button class="l1">d</button>
+                <button class="l2">e</button>
+                <button class="l3">f</button>
+                <button class="l1">g</button>
+                <button class="l2">h</button>
+                <button class="l3">i</button>
+                <button class="l1">j</button>
+                <button class="l2">k</button>
+                <button class="l3">l</button>
+                <button class="l1">m</button>
+                <button class="l2">n</button>
+                <button class="l3">ñ</button>
+                <button class="l1">o</button>
+                <button class="l2">p</button>
+                <button class="l3">q</button>
+                <button class="l1">r</button>
+                <button class="l2">s</button>
+                <button class="l3">t</button>
+                <button class="l1">u</button>
+                <button class="l2">v</button>
+                <button class="l3">w</button>
+                <button class="l1">x</button>
+                <button class="l2">y</button>
+                <button class="l3">z</button>
+            </div>
+        </div>
+    </main>
+    <audio id="miMusica" loop autoplay>
+        <source src="/Ahorcado/img/MIX NAVIDEÑO 2024_ CANCIONES de NAVIDAD 🎅🏽 VILLANCICOS de NAVIDAD, Burrito Sabanero, Rodolfo el Reno_pELqdGQ_XxQ.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Botón de mute/unmute para controlar el audio -->
+    <img id="botonMute" src="/Ahorcado/img/klipartz.com.png" width="35px" alt="Mute" onclick="toggleMute()">
+
+    <!-- Script JavaScript -->
+    <script>
+        // Obtención de elementos del DOM
+        var miMusica = document.getElementById("miMusica");
+        var botonMute = document.getElementById("botonMute");
+
+        // Función para silenciar/des-silenciar el audio
+        function toggleMute() {
+            if (miMusica.muted) {
+                miMusica.muted = false; // Des-silencia el audio
+                botonMute.src = "/Ahorcado/img/klipartz.com.png"; // Cambia la imagen del botón a 'mute'
+            } else {
+                miMusica.muted = true; // Silencia el audio
+                botonMute.src = "/Ahorcado/img/1.png"; // Cambia la imagen del botón a 'unmute'
+            }
+        }
+    </script>
+    <script type="text/javascript" src="juego.js"></script>
+</body>
+</html>
