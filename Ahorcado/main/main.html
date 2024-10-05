@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ahorcado Navideño</title>
+    <link rel="stylesheet" href="/Ahorcado/main/diseño.css"> <!-- Enlace a un archivo de estilos llamado diseño.css -->
+</head>
+
+<body>
+    <br> <!-- Salto de línea -->
+    <div class="padre">
+        <h1>¡BIENVENIDO AL AHORCADO NAVIDEÑO!</h1> <!-- Título principal -->
+        <br> <!-- Salto de línea -->
+        <p class="p1">Que nivel le gustaría jugar:</p> <!-- Párrafo introductorio -->
+
+        <!-- Enlaces a diferentes niveles del juego con botones -->
+        <a class="boton" href="/Ahorcado/dificil/index.html"> <button class="boton"> Difícil</button> </a>
+        <p class="p2"> Palabras más complejas sin ayuda ni pistas.</p>
+        <a class="boton" href="/Ahorcado/medio/index.html"> <button class="boton"> Medio</button> </a>    
+        <p class="p2"> Complejidad nivel medio, con ayuda limitada.</p>
+        <a class="boton" href="/Ahorcado/facil/index.html"> <button class="boton"> Fácil</button> </a>
+        <p class="p2"> Palabras sencillas con todo tipo de ayuda.</p>
+        <br> <!-- Salto de línea -->
+    </div>
+
+    <!-- Imágenes decorativas -->
+    <img class="santa" src="/Ahorcado/img/santa-claus-26.gif" >
+    <img class="grinch" src="/Ahorcado/img/picmix.com_1578956.gif">
+
+    <!-- Reproductor de audio con la música navideña -->
+    <audio id="miMusica" loop autoplay>
+        <source src="/Ahorcado/img/MIX NAVIDEÑO 2024_ CANCIONES de NAVIDAD 🎅🏽 VILLANCICOS de NAVIDAD, Burrito Sabanero, Rodolfo el Reno_pELqdGQ_XxQ.mp3" type="audio/mp3">
+    </audio>
+
+    <!-- Botón de mute/unmute para controlar el audio -->
+    <img id="botonMute" src="/Ahorcado/img/klipartz.com.png" width="35px" alt="Mute" onclick="toggleMute()">
+
+    <!-- Script JavaScript -->
+    <script>
+        // Obtención de elementos del DOM
+        var miMusica = document.getElementById("miMusica");
+        var botonMute = document.getElementById("botonMute");
+
+        // Función para silenciar/des-silenciar el audio
+        function toggleMute() {
+            if (miMusica.muted) {
+                miMusica.muted = false; // Des-silencia el audio
+                botonMute.src = "/Ahorcado/img/klipartz.com.png"; // Cambia la imagen del botón a 'mute'
+            } else {
+                miMusica.muted = true; // Silencia el audio
+                botonMute.src = "/Ahorcado/img/1.png"; // Cambia la imagen del botón a 'unmute'
+            }
+        }
+    </script>
+</body>
+
+</html>

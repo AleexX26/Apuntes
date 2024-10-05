@@ -1,0 +1,59 @@
+body{
+    background-image: url(https://e00-elmundo.uecdn.es/assets/multimedia/imagenes/2021/11/12/16367293961507.jpg);
+    background-repeat:no-repeat;
+    background-attachment:fixed ;
+    background-size: cover;
+}
+.padre {
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.7); /* Ajuste de la opacidad */
+    border-radius: 15px;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    width: 450px;
+    margin: auto; /* Alinea automáticamente el contenedor */
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.5); /* Sombra para resaltar */
+}
+h1{
+    text-align: center;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 20px;
+    color: rgb(126, 18, 29);
+    text-decoration-line: underline;
+}
+.p1{
+    color: rgb(189, 54, 52);
+    left: 150px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+.p2{
+    color: rgb(206, 172, 92);
+    font-style: oblique;
+}
+.boton{
+    background-color: rgb(3, 79, 27);
+    border-radius: 20px;
+    border: none !important;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.boton:hover {
+    transform: scale(1.4);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.7);
+}
+.santa{
+    top: 80px;
+    position: absolute;
+    width: 400px;
+}
+.grinch{
+    position: absolute;
+    left: 68%;
+    width: 400px;
+}
+
+#botonMute {
+    cursor: pointer;
+}
